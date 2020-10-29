@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Form</title>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+        label{
+            font-size: 10pt;
+        }
+        button{
+            background-color: cornflowerblue;
+            width: 300px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h2>FORM PENDAFTARAN </h2>
+    <form action="submit">
+        <label for="nama">Nama Lengkap : </label>
+        <div>
+            <input type="text" name="nama" id="nama" placeholder="Nama Lengkap" required>
+        </div>
+        <label for="TTL">Tempat Tanggal Lahir : </label>
+        <div>
+            <input type="text" name="tempatlahir" id="tempatlahir" required>,
+            <input type="date" name="lahir" id="lahir">
+        </div>
+        <label for="gender">Gender : </label>
+        <div>
+            <input type="radio" name="gender" id="gender" value="L">Laki-Laki
+            <input type="radio" name="gender" id="gender" value="P">Perempuan
+        </div>
+        <label for="nope">No HP :</label>
+        <div>
+            <input type="number" name="nope" id="nope" required>
+        </div>
+        <label for="email">Email :</label>
+        <div>
+            <input type="text" name="email" id="email" required>
+        </div>
+
+
+        <label for="provinsi">Provinsi : </label>
+        <div>
+            <select name="provinsi" id="provinsi" required>
+                <option value="" hidden selected>Pilih Salah Satu</option>
+                <option value="depok">Depok</option>
+                <option value="jakarta">Jakarta</option>
+            </select>
+        </div>
+        <label for="kota">Kota :</label>
+        <div>
+            <select  name="kota" id="kota" required>
+                <option value="" hidden selected>Pilih Salah Satu</option>
+                <optgroup label="Depok">
+                    <option value="pancoran_mas">Pancoran Mas</option>
+                    <option value="mampang">Mampang</option>
+                </optgroup>
+                <optgroup label="Jakarta">
+                    <option value="tanah_abang">Tanah Abang</option>
+                    <option value="tanjung_priok">Tanjung Priok</option>
+                </optgroup>
+            </select>
+        </div> 
+        <label for="kodepos">Kode Pos :</label>
+        <div>
+            <input type="number" name="kodepos" id="kodepos" maxlength="5">
+        </div>
+        <label for="detail_alamat">Detail Alamat :</label>
+        <div>
+            <textarea name="alamatlengkap" id="alamatlengkap" cols="33" rows="4"></textarea>
+        </div>
+        <label for="tipemember">Tipe Anggota :</label>
+        <div>
+            <input type="radio" name="tipemember" id="tipemember" value="reguler">Reguler
+            <input type="radio" name="tipemember" id="tipemember" value="premium">Premium
+            <input type="radio" name="tipemember" id="tipemember" value="vip">VIP
+        </div>
+        <label for="kursus">Nama Kursus :</label>
+        <div>
+            <select name="kursus" id="kursus">
+                <option value="" hidden selected>Pilih Kursus Anda</option>
+                <option value="memasak">Memasak</option>
+                <option value="memancing">Memancing</option>
+                <option value="mengemudi">Mengemudi</option>
+                <option value="bengkel">Bengkel</option>
+            </select>
+        </div>
+        <label for="metodepembayaran">Metode Pembayaran :</label>
+        <div>
+            <input type="radio" name="metodepembayaran" id="metodepembayaran" value="tunai">Bayar Tunai
+            <input type="radio" name="metodepembayaran" id="metodepembayaran" value="transfer">Transfer
+            <input type="radio" name="metodepembayaran" id="metodepembayaran" value="kredit">Kredit
+        </div>
+        <label for="catatan">Catatan :</label>
+        <div>
+            <textarea name="catatan" id="catatan" cols="33" rows="4"></textarea>
+        </div>
+        <button type="submit">DAFTAR</button>
+    </form>
+</body>
+</html>
